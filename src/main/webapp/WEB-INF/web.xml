@@ -76,6 +76,14 @@
             <param-value>2019211001000910</param-value>
         </init-param>
     </servlet>
+    <servlet>
+        <servlet-name>SearchServlet</servlet-name>
+        <servlet-class>com.fuguiping.week6.demo.SearchServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RedirectServlet</servlet-name>
+        <servlet-class>com.fuguiping.week6.demo.RedirectServlet</servlet-class>
+    </servlet>
     <!--    <servlet>-->
     <!--        <servlet-name>LoginServlet</servlet-name>-->
     <!--        <servlet-class>com.ganzhou.week5.demo.LoginServlet</servlet-class>-->

@@ -69,12 +69,20 @@
         <servlet-class>com.fuguiping.week4.demo.ConfigDemoServlet</servlet-class>
         <init-param>
             <param-name>username</param-name>
-            <param-value>GanZhou</param-value>
+            <param-value>FGuiping</param-value>
         </init-param>
         <init-param>
             <param-name>studentId</param-name>
-            <param-value>2019211001000916</param-value>
+            <param-value>2019211001000910</param-value>
         </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>SearchServlet</servlet-name>
+        <servlet-class>com.fuguiping.week6.demo.SearchServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RedirectServlet</servlet-name>
+        <servlet-class>com.fuguiping.week6.demo.RedirectServlet</servlet-class>
     </servlet>
     <!--    <servlet>-->
     <!--        <servlet-name>LoginServlet</servlet-name>-->
