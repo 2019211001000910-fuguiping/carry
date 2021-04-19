@@ -19,30 +19,6 @@
         <param-name>password</param-name>
         <param-value>1234567890</param-value>
     </context-param>
-
-
-
-    <!--    <servlet>-->
-    <!--        <servlet-name>registerServlet</servlet-name>-->
-    <!--        <servlet-class>com.ganzhou.week3.demo.registerServlet</servlet-class>-->
-    <!--        <init-param>-->
-    <!--            <param-name>driver</param-name>-->
-    <!--            <param-value>com.microsoft.sqlserver.jdbc.SQLServerDriver</param-value>-->
-    <!--        </init-param>-->
-    <!--        <init-param>-->
-    <!--            <param-name>url</param-name>-->
-    <!--            <param-value>jdbc:sqlserver://localhost;DatabaseName=userdb;</param-value>-->
-    <!--        </init-param>-->
-    <!--        <init-param>-->
-    <!--            <param-name>username</param-name>-->
-    <!--            <param-value>sa</param-value>-->
-    <!--        </init-param>-->
-    <!--        <init-param>-->
-    <!--            <param-name>password</param-name>-->
-    <!--            <param-value>123456</param-value>-->
-    <!--        </init-param>-->
-    <!--        <load-on-startup>3</load-on-startup>-->
-    <!--    </servlet>-->
     <servlet>
         <servlet-name>JDBCDemoServlet</servlet-name>
         <servlet-class>com.fuguiping.week4.demo.JDBCDemoServlet</servlet-class>
@@ -84,22 +60,6 @@
         <servlet-name>RedirectServlet</servlet-name>
         <servlet-class>com.fuguiping.week6.demo.RedirectServlet</servlet-class>
     </servlet>
-    <!--    <servlet>-->
-    <!--        <servlet-name>LoginServlet</servlet-name>-->
-    <!--        <servlet-class>com.ganzhou.week5.demo.LoginServlet</servlet-class>-->
-    <!--    </servlet>-->
-<!--    <servlet-mapping>-->
-<!--        <servlet-name>Ganzhou</servlet-name>-->
-<!--        <url-pattern>/hello</url-pattern>-->
-<!--    </servlet-mapping>-->
-<!--    <servlet-mapping>-->
-<!--        <servlet-name>LifeCycleServlet</servlet-name>-->
-<!--        <url-pattern>/life</url-pattern>-->
-<!--    </servlet-mapping>-->
-    <!--    <servlet-mapping>-->
-    <!--        <servlet-name>registerServlet</servlet-name>-->
-    <!--        <url-pattern>/register</url-pattern>-->
-    <!--    </servlet-mapping>-->
     <servlet-mapping>
         <servlet-name>JDBCDemoServlet</servlet-name>
         <url-pattern>/jdbc</url-pattern>
