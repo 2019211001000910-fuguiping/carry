@@ -71,4 +71,7 @@ public class ProductDao implements IProductDao {
     public List<Product> getPicture(Integer productId, Connection con) throws SQLException {
         return null;
     }
+
+    public byte[] getPictureById(int id, Connection con) {
+    }
 }
