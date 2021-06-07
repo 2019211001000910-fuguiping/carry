@@ -9,6 +9,8 @@
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/week.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/index.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/lab1/assignment1.jsp" value="file://$PROJECT_DIR$/src/main/webapp/lab1" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/lab1/assignment2/welcome.jsp" value="file://$PROJECT_DIR$/src/main/webapp/lab1/assignment2" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/lab1/login.jsp" value="file://$PROJECT_DIR$/src/main/webapp/lab1" />
       </map>
     </option>

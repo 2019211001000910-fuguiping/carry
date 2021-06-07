@@ -1,20 +1,50 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 付贵平
-  Date: 2021/4/11
-  Time: 22:19
-  To change this template use File | Settings | File Templates.
---%>
-<%@include file="header.jsp"%>
-<form style="text-align: center;background: deepskyblue" method="post" action="login">
-    <h1 style="text-align: center;color: #788dad">login</h1>
-    <%
-        if (request.getAttribute("message")==null)
-            out.println(request.getAttribute("message"));
-    %>
-    <input type="text" name="username" value="" placeholder="username"></br></br>
-    <input type="password" name="password" value="" placeholder="password"></br></br>
-    <input type="submit" name="login" value="login">
-</form>
 
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@include file="header.jsp"%>
+<section id="form"><!--form-->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-sm-offset-1">
+					<div class="login-form"><!--login form-->
+					<h2>Login to your account</h2>	<%
+    if(!(request.getAttribute("message")==null)){
+    out.println("<h2>"+request.getAttribute("message")+"</h2>");
+}%>
+<%
+    Cookie[] cookies=request.getCookies();
+    String username="";
+    String password="";
+    String rememberMe="";
+    if (cookies!=null){
+        for (Cookie cookie:cookies){
+            if (cookie.getName().equals("cUsername")){
+                username=cookie.getValue();
+            }
+            if (cookie.getName().equals("cPassword")){
+                password=cookie.getValue();
+            }
+            if (cookie.getName().equals("cRememberMe")){
+                rememberMe=cookie.getValue();
+            }
+        }
+    }
+    //update 5 user basepath
+%>
+
+<form method="post" action="<%=basePath+"login"%>">
+    <input type="text" name="username" placeholder="Username" value="<%=username%>"><br>
+   <input type="password" name="password" placeholder="password" value="<%=password%>">
+    <br/>
+    <span>
+		<input type="checkbox" class="checkbox" name="remember" value="1" <%="1".equals(rememberMe)? "checked":""%>/> Keep me signed in
+   </span>
+    <button type="submit" class="btn btn-default">Login</button>
+</form>	
+					</div><!--/login form-->
+				</div>
+				
+				
+			</div>
+		</div>
+	</section><!--/form-->
 <%@include file="footer.jsp"%>

@@ -73,5 +73,7 @@ public class ProductDao implements IProductDao {
     }
 
     public byte[] getPictureById(int id, Connection con) {
+        return null;
     }
+
 }

@@ -31,17 +31,13 @@ public class ProductDetailsServlet extends HttpServlet {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
-        try {
-            //get product by id
-            if (request.getParameter("id") != null) {
-                int productId = Integer.parseInt(request.getParameter("id"));
-                ProductDao productDao = new ProductDao();
+        //get product by id
+        if (request.getParameter("id") != null) {
+            int productId = Integer.parseInt(request.getParameter("id"));
+            ProductDao productDao = new ProductDao();
 
-                Product product = productDao.findById(productId, con);
-                request.setAttribute("p", product);
-            }
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
+            Product product = productDao.findById(productId, con);
+            request.setAttribute("p", product);
         }
         //forward
         request.getRequestDispatcher("/WEB-INF/views/productDetails.jsp").forward(request, response);
